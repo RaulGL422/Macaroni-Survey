@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Macaroni Survey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="menu">
+            <header>
+                <h1 id="title">The Macaroni</h1>
+                <p id="description">Thank you for participating in this survey, fill it out and follow all the steps</p>
+            </header>
+            <main>
+                <form id="survey-form">
+                    <fieldset>
+                    <h2><b>User Information</b></h2>
+                        <label id="name-label">Name</label>
+                        <input type="text" placeholder="Enter your name" required id="name">
+                        
+                        <label id="email-label">Email</label>
+                        <input type="email" placeholder="Enter your email" required id="email">
+                        
+                        <label id="number-label">Age</label>
+                        <input type="number" required placeholder="Age" min="1" max="3" id="number">
+                    </fieldset>
+                    <label name="text">How do you prefer macaroni?</label>
+                    <select id="dropdown" name="selector">
+                        <option value="hot">Hot</option>
+                        <option value="cold">Cold</option>
+                    </select>
+
+                    <label name="text">How do you like macaroons?</label>
+                    <label><input type="radio" value="salad" name="r-button"> Pasta Salad</label>
+                    <label><input type="radio" value="cooked" name="r-button"> Cooked</label>
+                    <label><input type="radio" value="both" name="r-button"> Both</label>
+
+                    <label name="text">What do you like to add to macaroons?</label>
+                    <label><input type="checkbox" value="tomatoe"> Tomatoe</label>
+                    <label><input type="checkbox" value="cheese"> Cheese</label>
+                    <label><input type="checkbox" value="bacon"> Bacon</label>
+                    <label><input type="checkbox" value="sausage"> Sausage</label>
+                    <label><input type="checkbox" value="egg"> Egg</label>
+                    <label><input type="checkbox" value="other"> Other...</label>
+                    <textarea placeholder="Enter the ingredients..." id="textarea" cols="40" rows="5"></textarea>
+                    
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
